@@ -47,9 +47,11 @@ The course standardizes on one tool per job to keep setup simple and eliminate "
 |---|---|---|
 | **Container Runtime** | Docker Desktop | Runs containers locally |
 | **Kubernetes** | Kind (Kubernetes in Docker) | Local multi-node clusters |
+| **Package Manager** | Helm | Installs Crossplane, Prometheus, Chaos Mesh into the cluster |
 | **IaC / Provisioning** | Pulumi (Python SDK) | Cluster and resource provisioning |
 | **Resource Abstraction** | Crossplane | Self-service XRDs, Compositions, Claims |
 | **Policy Engine** | OPA / Conftest / Gatekeeper | Policy-as-Code, shift-left validation |
+| **Git Hooks** | pre-commit | Shift-left validation on every commit |
 | **Developer Portal** | Backstage | Service catalog, software templates, docs |
 | **CI/CD** | GitHub Actions | Reusable workflow pipelines |
 | **Observability** | OpenTelemetry Collector | Unified telemetry collection |
@@ -62,6 +64,7 @@ The course standardizes on one tool per job to keep setup simple and eliminate "
 | **Backup & Recovery** | Velero | Cluster backup and restore |
 | **AI / LLM** | Anthropic Claude (optional) | RAG, multi-agent incident response |
 | **AI (Local / No API Key)** | TF-IDF (scikit-learn) | Local doc search, alert correlation |
+| **Web Framework** | Flask | Self-service onboarding API |
 | **Language** | Python 3 | All scripts and automation |
 
 > **Note on AI features:** Every AI demo has a local-only fallback (TF-IDF, heuristics) that runs without any API key. Claude integration is optional for those who want to explore LLM-powered capabilities.
@@ -94,11 +97,12 @@ Minimal by design. You need a laptop, a terminal, and the tools below.
 | **Git** | Latest | `brew install git` |
 | **Pulumi** | Latest | `brew install pulumi` or [pulumi.com/docs/install](https://www.pulumi.com/docs/install/) |
 | **conftest** | Latest | `brew install conftest` or [conftest.dev](https://www.conftest.dev/install/) |
+| **pre-commit** | Latest | `pip3 install pre-commit --break-system-packages` or [pre-commit.com](https://pre-commit.com/#install) |
 
 ### Python Packages
 
 ```bash
-pip3 install pulumi pulumi-kubernetes scikit-learn pyyaml requests --break-system-packages
+pip3 install pulumi pulumi-kubernetes scikit-learn pyyaml requests flask --break-system-packages
 ```
 
 ### Quick Validation

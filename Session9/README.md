@@ -45,4 +45,8 @@ python3 friction-analyzer.py
 
 Measure before you build, measure as you go, measure to prove value. Re-run the maturity assessment from Session 1 — your understanding of what "good" looks like has fundamentally changed. Present to leadership in business outcomes, not technical metrics.
 
+## Go Deeper
+
+This session covers Chapter 14 of [*The Platform Engineer's Handbook*](https://peh-packt.platformetrics.com/), which goes further into platform adoption strategies, organizational change management, and scaling platform teams. See the [book repo](https://github.com/achankra/peh) for the full code samples.
+
 [Back to Course Overview](../README.md)

@@ -4,7 +4,7 @@
 
 ## Overview
 
-This is where hands meet keyboard. You'll spin up a Kind cluster, provision team namespaces with resource quotas and RBAC, and write your first piece of infrastructure-as-code using Pulumi with the Python SDK. By the end, you have a multi-tenant control plane where each team gets an isolated namespace with guardrails.
+This is where hands meet keyboard. You'll spin up a Kind cluster, provision team namespaces with resource quotas and RBAC, and write your first piece of infrastructure-as-code using Pulumi with the Python SDK. By the end, you'll have the multi-tenant foundation that every IDP builds on — isolated namespaces with guardrails that prevent teams from stepping on each other.
 
 ## What You'll Learn
 
@@ -47,5 +47,9 @@ python3 test-cluster-health.py
 ## Key Takeaway
 
 One command creates a namespace + quota + limit range + RBAC. Developers never touch cluster-level resources. This is the foundation every subsequent session builds on.
+
+## Go Deeper
+
+This session covers Chapters 4-5 of [*The Platform Engineer's Handbook*](https://peh-packt.platformetrics.com/), which goes further into production-grade cluster architecture, multi-cluster strategies, and GitOps with ArgoCD. See the [book repo](https://github.com/achankra/peh) for the full code samples.
 
 [Back to Course Overview](../README.md)

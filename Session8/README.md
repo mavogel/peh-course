@@ -52,4 +52,8 @@ python3 test-ai-agents.py
 
 AI on a platform needs the same operational rigor as any production service: observability, governance alerts, guardrails, and human-in-the-loop for critical actions. Start with local heuristics (TF-IDF, rule-based agents), add LLMs when you've proven the workflow.
 
+## Go Deeper
+
+This session covers Chapter 13 of [*The Platform Engineer's Handbook*](https://peh-packt.platformetrics.com/), which goes further into production AI/ML platform patterns, advanced RAG architectures, and enterprise-grade AI governance. See the [book repo](https://github.com/achankra/peh) for the full code samples.
+
 [Back to Course Overview](../README.md)

@@ -17,7 +17,7 @@ Self-service infrastructure meets shift-left security. You'll set up Crossplane 
 
 ## Tools Required
 
-- kubectl, Helm (for Crossplane), conftest, Python 3
+- kubectl, Helm (for Crossplane), conftest, pre-commit, Python 3
 
 ## Contents
 
@@ -46,5 +46,9 @@ python3 test-infrastructure.py
 ## Key Takeaway
 
 Developers submit 10 lines of YAML, the platform provisions the database. Conftest catches violations before code reaches the cluster. AI generates config, but it passes through the same policy gate as human-written code.
+
+## Go Deeper
+
+This session covers Chapters 6-7 of [*The Platform Engineer's Handbook*](https://peh-packt.platformetrics.com/), which goes further into advanced Crossplane patterns, full GitOps pipelines with ArgoCD, and progressive delivery with Argo Rollouts. See the [book repo](https://github.com/achankra/peh) for the full code samples.
 
 [Back to Course Overview](../README.md)

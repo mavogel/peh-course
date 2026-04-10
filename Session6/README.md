@@ -4,7 +4,7 @@
 
 ## Overview
 
-You can't run a platform blind. This session deploys the OpenTelemetry Collector as the single entry point for all telemetry, defines SLOs with Sloth that generate Prometheus recording rules, sets up cost visibility with OpenCost, and demonstrates AI-powered alert correlation that reduces 50 noisy alerts down to 3 root-cause incidents.
+You can't run a platform blind. This session deploys the OpenTelemetry Collector as the single entry point for all telemetry, defines SLOs with Sloth that generate Prometheus recording rules, runs cost analysis and anomaly detection scripts, and demonstrates AI-powered alert correlation that reduces 50 noisy alerts down to 3 root-cause incidents.
 
 ## What You'll Learn
 
@@ -47,5 +47,9 @@ python3 ai-agent-observability.py
 ## Key Takeaway
 
 Cost visibility is a platform responsibility, not an afterthought. AI alert correlation reduces alert fatigue by grouping related signals automatically — runs locally with heuristics, optionally add an LLM for advanced pattern recognition.
+
+## Go Deeper
+
+This session covers Chapters 10-11 of [*The Platform Engineer's Handbook*](https://peh-packt.platformetrics.com/), which goes further into production observability patterns, OpenCost for Kubernetes cost management, and advanced SLO strategies. See the [book repo](https://github.com/achankra/peh) for the full code samples.
 
 [Back to Course Overview](../README.md)

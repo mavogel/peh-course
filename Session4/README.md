@@ -37,4 +37,8 @@ python3 test-policies.py
 
 If any test fails, you know exactly which layer has a problem. In production, these same tests run in CI as platform smoke tests after every change.
 
+## Go Deeper
+
+Day 1 covers the foundational layers from Chapters 1-7 of [*The Platform Engineer's Handbook*](https://peh-packt.platformetrics.com/). The book expands on each layer with production-grade patterns, multi-cluster strategies, and advanced GitOps workflows. See the [book repo](https://github.com/achankra/peh) for the full code samples.
+
 [Back to Course Overview](../README.md)

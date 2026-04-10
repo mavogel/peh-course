@@ -44,4 +44,8 @@ python3 platform-kpi-collector.py
 
 You can't improve what you don't measure. The maturity assessment and KPI baseline you establish here become your "before" snapshot — you'll revisit them in Session 9 to prove the platform's value.
 
+## Go Deeper
+
+This session covers Chapters 1-3 of [*The Platform Engineer's Handbook*](https://peh-packt.platformetrics.com/), which goes further into Platform as Product, Team Topologies, and organizational design patterns. See the [book repo](https://github.com/achankra/peh) for the full code samples.
+
 [Back to Course Overview](../README.md)

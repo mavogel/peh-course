@@ -16,7 +16,7 @@ Day 2 opens with the developer's perspective. You'll scaffold a complete service
 
 ## Tools Required
 
-- Python 3, pip3 (scikit-learn for TF-IDF), Node.js (optional, for Backstage local)
+- Python 3, pip3 (scikit-learn for TF-IDF, Flask for onboarding API), Node.js (optional, for Backstage local)
 
 ## Contents
 
@@ -43,5 +43,9 @@ python3 test-onboarding.py
 ## Key Takeaway
 
 One command creates everything a developer needs to ship. AI doc search means new developers find answers instantly instead of asking in Slack. TF-IDF runs locally; swap for Claude embeddings when ready for semantic search.
+
+## Go Deeper
+
+This session covers Chapters 8-9 of [*The Platform Engineer's Handbook*](https://peh-packt.platformetrics.com/), which goes further into Backstage plugin development, advanced golden paths, and measuring developer experience at scale. See the [book repo](https://github.com/achankra/peh) for the full code samples.
 
 [Back to Course Overview](../README.md)

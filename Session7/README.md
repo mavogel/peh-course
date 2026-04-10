@@ -49,4 +49,8 @@ python3 test-resilience.py
 
 Chaos experiments discover how your system breaks before users do. AI runbook automation doesn't replace SREs — it gives them a co-pilot that identifies which steps need human approval vs. auto-execute.
 
+## Go Deeper
+
+This session covers Chapter 12 of [*The Platform Engineer's Handbook*](https://peh-packt.platformetrics.com/), which goes further into production readiness checklists, advanced progressive delivery with Argo Rollouts, and security hardening. See the [book repo](https://github.com/achankra/peh) for the full code samples.
+
 [Back to Course Overview](../README.md)
