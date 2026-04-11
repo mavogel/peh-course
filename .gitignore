@@ -1,2 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# macOS
 .DS_Store
-~
+.AppleDouble
+.LSOverride
+._*
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# Pulumi state (local backend)
+.pulumi/
+Pulumi.*.yaml.bak
+
+# Node (Backstage)
+node_modules/
+.npm
+package-lock.json
+
+# Generated output (re-created by running scripts)
+generated-service/
+dashboards/
+
+# Logs
+*.log
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# Secrets (never commit these)
+.env
+.env.local
+*.pem
+*.key
