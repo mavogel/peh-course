@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: demo-api
+  namespace: platform
+  description: Service
+  links:
+    - url: git@github.com:platform/demo-api.git
+      title: Repository
+  tags:
+    - platform
+spec:
+  type: service
+  owner: platform
+  lifecycle: production
+  definition:
+    type: kubernetes
+    target: team-platform

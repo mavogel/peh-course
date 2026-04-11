@@ -1,0 +1,44 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Build Docker image
+        run: docker build -t demo-api:${GITHUB_SHA} .
+      
+      - name: Run tests
+        run: make test
+      
+      - name: Run linters
+        run: make lint
+      
+      - name: Push image (on main)
+        if: github.ref == 'refs/heads/main'
+        run: |
+          docker tag demo-api:${GITHUB_SHA} demo-api:latest
+          docker push demo-api:latest
+
+  deploy:
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Deploy to Kubernetes
+        env:
+          KUBECONFIG: ${{ secrets.KUBECONFIG }}
+        run: |
+          kubectl set image deployment/demo-api \
+            demo-api=demo-api:${GITHUB_SHA} \
+            -n team-platform
+          kubectl rollout status deployment/demo-api -n team-platform

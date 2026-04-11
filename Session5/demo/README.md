@@ -18,7 +18,7 @@ cat catalog-info.yaml
 cat app-config.yaml
 
 # 3. Run the project bootstrapper to create a new service
-python3 project-bootstrapper.py
+python3 project-bootstrapper.py bootstrap platform demo-api python
 
 # 4. Explore the generated files
 ls -la generated-service/

@@ -196,7 +196,8 @@ kubectl cluster-info --context kind-workshop
 
 ```bash
 cd Session2/demo
-python3 namespace-provisioner.py
+python3 namespace-provisioner.py --namespace team-alpha --env dev --team alpha
+python3 namespace-provisioner.py --namespace team-beta --env dev --team beta
 kubectl apply -f rbac-platform-admin.yaml
 ```
 
@@ -214,7 +215,7 @@ conftest test conftest-tests/test-manifests.yaml -p conftest-tests/
 
 ```bash
 cd Session5/demo
-python3 project-bootstrapper.py
+python3 project-bootstrapper.py bootstrap platform demo-api python
 python3 rag-platform-docs.py
 ```
 

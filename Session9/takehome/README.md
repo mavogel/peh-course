@@ -23,7 +23,7 @@ python3 cost-analyzer.py
 
 ### 4. Document Friction Points (15 min)
 ```bash
-python3 friction-analyzer.py
+python3 friction-analyzer.py --workflow onboarding
 ```
 
 ## Your 30/60/90 Day Roadmap

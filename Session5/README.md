@@ -44,7 +44,7 @@ python3 verify_module.py
 ```bash
 # Demo
 cd demo
-python3 project-bootstrapper.py
+python3 project-bootstrapper.py bootstrap platform demo-api python
 python3 rag-platform-docs.py
 
 # Take-home exercises

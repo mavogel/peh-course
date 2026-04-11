@@ -1,0 +1,9 @@
+{
+  "scores": {
+    "self-service": 3.0,
+    "observability": 2.6,
+    "security": 2.6,
+    "devex": 2.2
+  },
+  "overall_score": 2.6
+}
