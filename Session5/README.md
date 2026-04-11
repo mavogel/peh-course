@@ -44,13 +44,23 @@ python3 verify_module.py
 ```bash
 # Demo
 cd demo
+
+# Scaffold a complete service: repo structure, Dockerfile, CI/CD, k8s manifests, catalog entry
 python3 project-bootstrapper.py bootstrap platform demo-api python
+
+# AI-powered doc search using TF-IDF — runs locally, no API key needed
 python3 rag-platform-docs.py
 
 # Take-home exercises
 cd takehome
+
+# Start the onboarding REST API — one call creates namespace + RBAC + quota + portal registration
 python3 onboarding-api.py
+
+# Validate the complete starter kit workflow (clone, build, test, deploy)
 python3 validate-workflow.py
+
+# Run the onboarding test suite: API endpoints, bootstrapper, template system
 python3 test-onboarding.py
 ```
 

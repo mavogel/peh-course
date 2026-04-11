@@ -47,16 +47,32 @@ python3 verify_module.py
 ```bash
 # Demo
 cd demo
+
+# RAG doc search: index platform docs with TF-IDF and answer natural language queries (no API key)
 python3 rag-platform-docs.py
+
+# Multi-agent incident response: Triage → Diagnosis → Remediation with human-in-the-loop
 python3 incident-agent.py
+
+# AI agent observability: Prometheus metrics for latency, confidence, override rates
 python3 ai-agent-observability.py
+
+# Review governance alerts that fire when AI confidence drops or override rates spike
 cat ai-governance-alerts.yaml
 
 # Take-home exercises
 cd takehome
+
+# Enforce AI safety boundaries: rate limits, confidence thresholds, blocked operations
 python3 ai-guardrails.py
+
+# Study the four-agent architecture: Investigation, Classification, Remediation, Communication
 python3 multi_agent_system.py
+
+# Group raw alerts into correlated incidents with root cause analysis
 python3 alert-correlator.py
+
+# Validate AI agent components: triage, RAG, guardrails, observability
 python3 test-ai-agents.py
 ```
 

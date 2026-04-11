@@ -13,21 +13,29 @@ pip3 install scikit-learn pyyaml --break-system-packages
 ## Steps
 ```bash
 # 1. AI-POWERED: RAG document search (no API key)
-# Runs sample queries automatically and shows retrieved docs with relevance scores
+# Indexes your platform documentation using TF-IDF and answers natural language queries.
+# Runs sample queries automatically and shows retrieved docs with relevance scores.
 python3 rag-platform-docs.py
+# Output: ranked search results for each query. New developers find answers instantly instead of searching wikis.
 
 # 2. AI-POWERED: Multi-agent incident response
+# Simulates a production incident handled by three specialized agents working in sequence:
+# Triage Agent (severity, blast radius) → Diagnosis Agent (root cause) → Remediation Agent (fix actions).
+# Each agent has a specific role, with human-in-the-loop approval for critical actions.
 python3 incident-agent.py
-# Triage Agent → Diagnosis Agent → Remediation Agent
-# Each agent has a specific role, human-in-the-loop for critical actions
+# Output: full incident timeline showing triage, diagnosis, and recommended remediation steps.
 
 # 3. AI-POWERED: Agent observability metrics
+# Demonstrates how to monitor AI agents the same way you monitor services:
+# latency per agent call, confidence scores, human override rates, and error tracking.
 python3 ai-agent-observability.py
-# How to monitor AI agents — latency, confidence, override rates
+# Output: sample Prometheus metrics showing agent health, performance, and governance indicators.
 
 # 4. Review AI governance alerts
+# Prometheus alert rules that fire when AI behavior drifts: confidence drops below threshold,
+# human override rate spikes (agents making bad suggestions), or agent latency exceeds SLO.
 cat ai-governance-alerts.yaml
-# Prometheus alerts for: confidence drops, high override rates, latency spikes
+# These alerts treat AI agents as first-class services with the same observability standards.
 ```
 
 ## Key Concepts

@@ -41,15 +41,23 @@ python3 verify_module.py
 ## Quick Start
 
 ```bash
-# Demo
+# Demo — score your org across self-service, observability, security, and DevEx
 cd demo
 python3 platform-maturity-assessment.py
 
 # Take-home exercises
 cd takehome
+
+# Evaluate against the 12 platform design principles (API-first, guardrails, etc.)
 python3 design-principles-checklist.py ../demo/platform-config.yaml
+
+# Interactive CLI survey — collects developer feedback, produces a DevEx score (0-100)
 python3 devex-survey.py
+
+# Map the onboarding workflow step by step and rank friction points by time impact
 python3 friction-analyzer.py --workflow onboarding
+
+# Collect DORA metrics (deployment frequency, lead time, MTTR, change failure rate) as your baseline
 python3 platform-kpi-collector.py
 ```
 

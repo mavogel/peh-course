@@ -40,8 +40,14 @@ python3 verify_module.py
 
 ```bash
 cd demo
+
+# Validate cluster health: nodes Ready, system pods running, namespaces, quotas, Pulumi/Crossplane config
 python3 test-cluster-health.py
+
+# Verify infrastructure: namespace isolation, RBAC roles, Crossplane readiness
 python3 test-infrastructure.py
+
+# Run offline policy checks: compliant vs. non-compliant manifests, conftest integration
 python3 test-policies.py
 ```
 

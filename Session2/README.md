@@ -42,20 +42,32 @@ python3 verify_module.py
 ## Quick Start
 
 ```bash
-# Create the cluster
+# Create the Kind cluster — the Kubernetes foundation for the entire workshop
 kind create cluster --name workshop
 
 # Demo
 cd demo
 pip3 install pulumi pulumi-kubernetes --break-system-packages
+
+# Create team-alpha namespace with resource quotas, network policies, and service accounts
 python3 namespace-provisioner.py --namespace team-alpha --env dev --team alpha
+
+# Same provisioner for team-beta — proves the process is standardized and repeatable
 python3 namespace-provisioner.py --namespace team-beta --env dev --team beta
+
+# Apply platform admin RBAC: ClusterRoles, ServiceAccounts, and bindings
 kubectl apply -f rbac-platform-admin.yaml
 
 # Take-home exercises
 cd takehome
+
+# Apply a scoped developer role (read pods/logs, deploy apps — cannot modify RBAC or delete namespaces)
 kubectl apply -f rbac-developer-role.yaml
+
+# Deploy a sample app to verify the cluster, RBAC, and quotas work end-to-end
 kubectl apply -f demo-app-deployment.yaml
+
+# Run cluster health checks: nodes Ready, system pods running, namespaces exist
 python3 test-cluster-health.py
 ```
 

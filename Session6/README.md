@@ -45,16 +45,32 @@ python3 verify_module.py
 ```bash
 # Demo
 cd demo
+
+# Deploy the OTel Collector — single entry point for all metrics, traces, and logs
 kubectl apply -f otel-collector-deployment.yaml
+
+# Review an SLO definition: "auth-service must have 99.9% availability over 30 days"
 cat sloth-auth-service-slo.yaml
+
+# Analyze resource usage across namespaces and generate a per-team cost breakdown
 python3 cost-analyzer.py
+
+# AI alert correlation: groups 50 noisy alerts into 3 root-cause incidents
 python3 alert-correlator.py
 
 # Take-home exercises
 cd takehome
+
+# Add OpenTelemetry tracing to a sample app with custom spans and metrics
 python3 instrument-app.py
+
+# Apply a Horizontal Pod Autoscaler to automatically scale pods based on CPU/memory
 kubectl apply -f checkout-api-hpa.yaml
+
+# Detect cost anomalies using statistical analysis (z-score, spike, trend detection)
 python3 cost-anomaly-detector.py
+
+# Monitor AI agents with Prometheus metrics: latency, confidence, override rates
 python3 ai-agent-observability.py
 ```
 

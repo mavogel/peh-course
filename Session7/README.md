@@ -45,17 +45,35 @@ python3 verify_module.py
 ```bash
 # Demo
 cd demo
+
+# Inject 100ms network latency into api-service pods via Chaos Mesh
 kubectl apply -f chaos-network-delay.yaml
+
+# Orchestrate the chaos experiment with safety controls and recovery monitoring
 python3 chaos-runner.py
+
+# Deploy a canary version alongside stable — traffic split with automated rollback on errors
 kubectl apply -f canary-deployment.yaml
+
+# Monitor canary health metrics and auto-rollback if thresholds are breached
 python3 rollback-controller.py
+
+# AI-powered: convert a markdown runbook into executable steps with safety gates
 python3 runbook-automator.py
 
 # Take-home exercises
 cd takehome
+
+# Kill random pods to test self-healing and measure recovery time
 kubectl apply -f chaos-experiment-pod-kill.yaml
+
+# Deploy blue-green: two full environments, instant traffic switch with instant rollback
 kubectl apply -f blue-green-deployment.yaml
+
+# Schedule automated Velero backups of cluster state
 kubectl apply -f velero-schedule.yaml
+
+# Validate SLO definitions, backup configs, and chaos experiment YAML
 python3 test-resilience.py
 ```
 

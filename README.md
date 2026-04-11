@@ -196,8 +196,12 @@ kubectl cluster-info --context kind-workshop
 
 ```bash
 cd Session2/demo
+
+# Create isolated team namespaces with resource quotas, network policies, and service accounts
 python3 namespace-provisioner.py --namespace team-alpha --env dev --team alpha
 python3 namespace-provisioner.py --namespace team-beta --env dev --team beta
+
+# Apply platform admin RBAC: ClusterRoles, ServiceAccounts, and bindings
 kubectl apply -f rbac-platform-admin.yaml
 ```
 
@@ -205,9 +209,13 @@ kubectl apply -f rbac-platform-admin.yaml
 
 ```bash
 cd Session3/demo
+
+# Install Crossplane providers, define the developer-facing API (XRD), and map it to resources (Composition)
 kubectl apply -f crossplane-providers.yaml
 kubectl apply -f xrd-postgresql.yaml
 kubectl apply -f composition-postgresql.yaml
+
+# Run policy checks against intentionally bad manifests — shift-left validation in action
 conftest test conftest-tests/test-manifests.yaml -p conftest-tests/
 ```
 
@@ -215,7 +223,11 @@ conftest test conftest-tests/test-manifests.yaml -p conftest-tests/
 
 ```bash
 cd Session5/demo
+
+# Scaffold a complete service: repo structure, Dockerfile, CI/CD, k8s manifests, catalog entry
 python3 project-bootstrapper.py bootstrap platform demo-api python
+
+# AI-powered doc search: index platform docs and answer queries locally with TF-IDF
 python3 rag-platform-docs.py
 ```
 
@@ -223,7 +235,11 @@ python3 rag-platform-docs.py
 
 ```bash
 cd Session6/demo
+
+# Deploy the OTel Collector as the single entry point for all telemetry
 kubectl apply -f otel-collector-deployment.yaml
+
+# AI alert correlation: group noisy alerts into root-cause incidents
 python3 alert-correlator.py
 ```
 
@@ -231,8 +247,14 @@ python3 alert-correlator.py
 
 ```bash
 cd Session7/demo
+
+# Inject 100ms network latency into api-service pods via Chaos Mesh
 kubectl apply -f chaos-network-delay.yaml
+
+# Orchestrate the chaos experiment with safety controls and recovery monitoring
 python3 chaos-runner.py
+
+# Convert a markdown runbook into executable steps with safety gates
 python3 runbook-automator.py
 ```
 
@@ -240,8 +262,14 @@ python3 runbook-automator.py
 
 ```bash
 cd Session8/demo
+
+# RAG doc search: answer natural language queries against platform docs (no API key)
 python3 rag-platform-docs.py
+
+# Multi-agent incident response: Triage → Diagnosis → Remediation with human-in-the-loop
 python3 incident-agent.py
+
+# AI agent observability: Prometheus metrics for latency, confidence, override rates
 python3 ai-agent-observability.py
 ```
 
@@ -249,8 +277,14 @@ python3 ai-agent-observability.py
 
 ```bash
 cd Session9/demo
+
+# Map your org into Team Topologies types and visualize interaction modes
 python3 team-topology-generator.py
+
+# Collect DORA metrics: deployment frequency, lead time, MTTR, change failure rate
 python3 platform-kpi-collector.py
+
+# Quantify AI impact in business terms: hours saved, incidents resolved faster
 python3 measure-ai-impact.py
 ```
 
