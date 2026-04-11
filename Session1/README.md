@@ -14,9 +14,22 @@ This session answers the "why" before diving into the "how." You'll assess your 
 - Design principles from *The Platform Engineer's Handbook*
 - How to measure developer experience (DevEx) as a baseline
 
+## Knowledge Prerequisites
+
+- Comfortable using a terminal (cd, ls, running scripts)
+- Basic Python 3 (running scripts, reading output — no advanced coding needed)
+- General understanding of what a software development lifecycle looks like
+- No Kubernetes or cloud experience required — Session 1 is entirely conceptual
+
 ## Tools Required
 
 - Python 3.10+
+
+## Verify Your Setup
+
+```bash
+python3 verify_module.py
+```
 
 ## Contents
 

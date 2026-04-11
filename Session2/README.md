@@ -14,9 +14,23 @@ This is where hands meet keyboard. You'll spin up a Kind cluster, provision team
 - Platform-level RBAC (admin vs. developer roles)
 - Control plane architecture for multi-tenancy
 
+## Knowledge Prerequisites
+
+- Understand what containers are and why they exist (Docker basics)
+- Know what Kubernetes is at a high level: clusters, nodes, pods, namespaces
+- Comfortable reading YAML files
+- Basic understanding of RBAC (role-based access control) as a concept
+- Familiarity with infrastructure-as-code as a concept (Terraform, Pulumi, etc.)
+
 ## Tools Required
 
 - Docker Desktop, Kind, kubectl, Python 3, Pulumi
+
+## Verify Your Setup
+
+```bash
+python3 verify_module.py
+```
 
 ## Contents
 

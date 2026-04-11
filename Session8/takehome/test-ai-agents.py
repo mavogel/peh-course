@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Chapter 14: AI Agent Tests
+Session 8: AI Agent Tests
 ===========================
 Tests for AI agent guardrails, alert correlation accuracy,
 and runbook parsing.
@@ -75,18 +75,18 @@ class TestIncidentAgent(unittest.TestCase):
     """Test the multi-agent incident response system."""
 
     def test_incident_agent_exists(self):
-        path = os.path.join(os.path.dirname(__file__), "incident-agent.py")
+        path = os.path.join(os.path.dirname(__file__), "incident_triage.py")
         self.assertTrue(os.path.exists(path))
 
     def test_incident_agent_valid_python(self):
-        path = os.path.join(os.path.dirname(__file__), "incident-agent.py")
+        path = os.path.join(os.path.dirname(__file__), "incident_triage.py")
         with open(path) as f:
             source = f.read()
         compile(source, path, "exec")
 
     def test_agent_has_role_separation(self):
         """Multi-agent system should have distinct agent roles."""
-        path = os.path.join(os.path.dirname(__file__), "incident-agent.py")
+        path = os.path.join(os.path.dirname(__file__), "incident_triage.py")
         content = open(path).read().lower()
         roles_found = sum(1 for role in ["triage", "diagnos", "remediat"]
                          if role in content)
@@ -121,11 +121,11 @@ class TestRAGSystem(unittest.TestCase):
     """Test the RAG platform documentation system."""
 
     def test_rag_module_exists(self):
-        path = os.path.join(os.path.dirname(__file__), "rag-platform-docs.py")
+        path = os.path.join(os.path.dirname(__file__), "rag_pipeline.py")
         self.assertTrue(os.path.exists(path))
 
     def test_rag_valid_python(self):
-        path = os.path.join(os.path.dirname(__file__), "rag-platform-docs.py")
+        path = os.path.join(os.path.dirname(__file__), "rag_pipeline.py")
         with open(path) as f:
             source = f.read()
         compile(source, path, "exec")
@@ -133,6 +133,6 @@ class TestRAGSystem(unittest.TestCase):
 
 if __name__ == "__main__":
     print("=" * 60)
-    print("Chapter 14: AI Agent Tests")
+    print("Session 8: AI Agent Tests")
     print("=" * 60)
     unittest.main(verbosity=2)

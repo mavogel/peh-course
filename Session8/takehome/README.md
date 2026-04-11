@@ -1,5 +1,11 @@
 # Session 8 Takehome — Build Your AI Platform Stack
 
+## Dependencies — Run This First
+```bash
+pip3 install scikit-learn pyyaml --break-system-packages
+# Optional (for LLM-powered features): export ANTHROPIC_API_KEY=your-key-here
+```
+
 ## What to Do After the Session
 
 ### 1. Build a Full RAG Pipeline (30 min)
@@ -46,7 +52,7 @@ python3 test-ai-agents.py
 ```
 
 ## Deliverable
-- Map your org's team topology (stream-aligned, platform, enabling)
 - Identify one runbook to automate with AI
 - Document 3 guardrails for any AI platform action
 - Write an AI adoption plan: what to add first, what to wait on
+- Run incident-agent and document how the triage → diagnosis → remediation flow maps to your on-call process

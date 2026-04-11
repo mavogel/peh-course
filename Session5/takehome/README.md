@@ -1,5 +1,11 @@
 # Session 5 Takehome — Build Your Onboarding Pipeline
 
+## Dependencies — Run This First
+```bash
+pip3 install flask scikit-learn pyyaml --break-system-packages
+```
+Requires a running Kind cluster from Session 2 (for onboarding-api.py to create namespaces).
+
 ## What to Do After the Session
 
 ### 1. Explore the Order Service Starter Kit (20 min)

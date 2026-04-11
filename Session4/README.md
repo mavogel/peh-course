@@ -13,9 +13,21 @@ Day 1 wraps up by proving everything works together. Three test suites validate 
 - How platform teams use smoke tests in CI
 - Debugging cross-layer issues
 
+## Knowledge Prerequisites
+
+- Everything from Sessions 1-3 (cluster, namespaces, Crossplane, policies)
+- Understanding of integration testing as a concept
+- Familiarity with what "smoke tests" are and why platform teams run them
+
 ## Tools Required
 
 - kubectl, Python 3 (same setup from Sessions 2-3)
+
+## Verify Your Setup
+
+```bash
+python3 verify_module.py
+```
 
 ## Contents
 

@@ -1,5 +1,13 @@
 # Session 3 Takehome — CI/CD Pipelines & Policy Authoring
 
+## Dependencies — Run This First
+Requires a running Kind cluster from Session 2.
+```bash
+# Install conftest and pre-commit if not already installed
+brew install conftest               # macOS (or see https://www.conftest.dev/install/)
+pip3 install pre-commit --break-system-packages
+```
+
 ## What to Do After the Session
 
 ### 1. Study the CI/CD Pipeline Architecture (20 min)

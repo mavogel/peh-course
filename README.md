@@ -149,11 +149,11 @@ Code/
 │   ├── demo/           # Chaos Mesh, canary deployments, AI runbook automation
 │   └── takehome/       # Velero backups, blue-green, security scanning
 ├── Session8/           # AI-Augmented Platforms
-│   ├── demo/           # Multi-agent incident response, AI governance, RAG
+│   ├── demo/           # RAG doc search, multi-agent incident response, AI governance
 │   └── takehome/       # Full AI platform stack, guardrails, agent testing
-└── Session9/           # Workshop Synthesis & Next Steps
-    ├── demo/           # Platform KPI measurement, AI impact metrics
-    └── takehome/       # 30/60/90-day roadmap, maturity re-assessment
+└── Session9/           # Team Topologies, Synthesis & Next Steps
+    ├── demo/           # Team topology generator, platform KPIs, AI impact metrics
+    └── takehome/       # Team topology mapping, 30/60/90-day roadmap, maturity re-assessment
 ```
 
 ---
@@ -176,8 +176,8 @@ Code/
 | [Session 5](Session5/) | **Developer Experience & Self-Service** | Backstage portal, service catalog, golden paths, AI-powered doc search (RAG) |
 | [Session 6](Session6/) | **Observability, SLOs & Cost** | OpenTelemetry, Prometheus, Sloth SLOs, cost analysis, AI alert correlation |
 | [Session 7](Session7/) | **Production Readiness & Resilience** | Chaos Mesh, canary/blue-green, Velero backups, AI runbook automation |
-| [Session 8](Session8/) | **AI-Augmented Platforms** | Multi-agent incident response, AI governance, agent observability, MCP integration |
-| [Session 9](Session9/) | **Workshop Synthesis & Next Steps** | KPI measurement, AI impact metrics, 30/60/90-day adoption roadmap |
+| [Session 8](Session8/) | **AI-Augmented Platforms** | RAG doc search, multi-agent incident response, AI governance, agent observability, MCP |
+| [Session 9](Session9/) | **Team Topologies, Synthesis & Next Steps** | Conway's Law, team topology mapping, KPI measurement, 30/60/90-day roadmap |
 
 ---
 
@@ -239,14 +239,16 @@ python3 runbook-automator.py
 
 ```bash
 cd Session8/demo
+python3 rag-platform-docs.py
 python3 incident-agent.py
 python3 ai-agent-observability.py
 ```
 
-### Step 8: Measure and Plan (Session 9)
+### Step 8: Team Topologies, Measure and Plan (Session 9)
 
 ```bash
 cd Session9/demo
+python3 team-topology-generator.py
 python3 platform-kpi-collector.py
 python3 measure-ai-impact.py
 ```

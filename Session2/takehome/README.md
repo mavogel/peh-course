@@ -1,5 +1,13 @@
 # Session 2 Takehome — Build Your Control Plane
 
+## Dependencies — Run This First
+```bash
+# Docker Desktop must be running
+# Install Kind and kubectl if not already installed
+brew install kind kubectl   # macOS
+pip3 install pulumi pulumi-kubernetes --break-system-packages
+```
+
 ## What to Do After the Session
 
 ### 1. Set Up Your Own Kind Cluster (10 min)

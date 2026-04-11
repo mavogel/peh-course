@@ -1,5 +1,16 @@
 # Session 7 Takehome — Full Resilience Suite
 
+## Dependencies — Run This First
+Requires a running Kind cluster from Session 2 with Chaos Mesh and Velero installed:
+```bash
+# Chaos Mesh
+helm repo add chaos-mesh https://charts.chaos-mesh.org
+helm install chaos-mesh chaos-mesh/chaos-mesh --namespace chaos-mesh --create-namespace
+
+# Velero (see https://velero.io/docs/main/basic-install/)
+# Uses MinIO as S3-compatible storage for local Kind clusters
+```
+
 ## What to Do After the Session
 
 ### 1. Run More Chaos Experiments (20 min)

@@ -15,9 +15,23 @@ Your platform needs to survive failure. This session injects real faults with Ch
 - AI runbook automation: markdown runbooks to executable steps
 - Security scanning in CI pipelines
 
+## Knowledge Prerequisites
+
+- Everything from Sessions 1-6
+- Understand deployment strategies at a high level (rolling, canary, blue-green)
+- Know what chaos engineering is (intentionally injecting failures to test resilience)
+- Basic understanding of backup and disaster recovery concepts
+- Familiarity with what runbooks are (step-by-step incident response procedures)
+
 ## Tools Required
 
 - kubectl, Helm (Chaos Mesh, Velero), Python 3
+
+## Verify Your Setup
+
+```bash
+python3 verify_module.py
+```
 
 ## Contents
 

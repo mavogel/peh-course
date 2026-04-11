@@ -1,19 +1,27 @@
-# Session 9 Demo — Measuring Platform Value
+# Session 9 Demo — Workshop Synthesis, Team Topologies & Next Steps
 
-## What You'll Show (5 min)
-Establish a KPI baseline and show how to measure ongoing platform impact.
+## Demo Overview
+Visualize how your platform mirrors your org structure, establish a KPI baseline,
+and measure ongoing platform and AI impact.
 
 ## Steps
 ```bash
-# 1. Collect platform KPIs
-python3 platform-kpi-collector.py
-# Shows: deployment frequency, lead time, MTTR, change failure rate
+# 1. Team topology visualization (Conway's Law in practice)
+python3 team-topology-generator.py
+# Stream-aligned, platform, enabling, and complicated-subsystem teams
+# Visualizes interaction modes: collaboration, X-as-a-Service, facilitating
 
-# 2. Measure AI impact (if AI features were adopted)
+# 2. Collect platform KPIs
+python3 platform-kpi-collector.py
+# Deployment frequency, lead time, MTTR, change failure rate
+
+# 3. Measure AI impact (if AI features were adopted)
 python3 measure-ai-impact.py
 ```
 
-## Key Talking Points
+## Key Concepts
+- Conway's Law: your platform will mirror your org structure — design both intentionally
+- Team Topologies: stream-aligned teams consume the platform, platform teams build it, enabling teams bridge the gap
 - Measure before you build: you need a baseline to prove value
 - DORA metrics are the industry standard for engineering productivity
 - Present to leadership in business terms: hours saved, cost reduced

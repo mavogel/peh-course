@@ -15,9 +15,23 @@ You can't run a platform blind. This session deploys the OpenTelemetry Collector
 - HPA / VPA for autoscaling
 - Observability personas (developer, SRE, platform, leadership)
 
+## Knowledge Prerequisites
+
+- Everything from Sessions 1-5
+- Understand the three pillars of observability: metrics, logs, traces
+- Know what Prometheus is (metrics collection and alerting)
+- Basic understanding of SLOs/SLIs (service level objectives and indicators)
+- Familiarity with what autoscaling means (HPA scales pods horizontally, VPA adjusts resource requests)
+
 ## Tools Required
 
 - kubectl, Helm (Prometheus stack), Python 3
+
+## Verify Your Setup
+
+```bash
+python3 verify_module.py
+```
 
 ## Contents
 

@@ -14,9 +14,23 @@ Day 2 opens with the developer's perspective. You'll scaffold a complete service
 - Team onboarding automation (namespace + RBAC + quota + portal registration)
 - Starter kit template architecture
 
+## Knowledge Prerequisites
+
+- Everything from Day 1 (Sessions 1-4)
+- Understand what a developer portal is (catalog of services, docs, templates)
+- Know what REST APIs are (Flask runs a simple HTTP server)
+- Basic understanding of what "golden paths" mean (opinionated, paved roads for developers)
+- Conceptual understanding of search/retrieval (TF-IDF is a text matching technique)
+
 ## Tools Required
 
 - Python 3, pip3 (scikit-learn for TF-IDF, Flask for onboarding API), Node.js (optional, for Backstage local)
+
+## Verify Your Setup
+
+```bash
+python3 verify_module.py
+```
 
 ## Contents
 

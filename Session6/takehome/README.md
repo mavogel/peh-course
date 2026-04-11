@@ -1,5 +1,13 @@
 # Session 6 Takehome — Full Observability, Cost & AI Stack
 
+## Dependencies — Run This First
+Requires a running Kind cluster from Session 2 with Prometheus installed:
+```bash
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+helm install prometheus prometheus-community/kube-prometheus-stack --namespace monitoring --create-namespace
+pip3 install pyyaml requests scikit-learn --break-system-packages
+```
+
 ## What to Do After the Session
 
 ### 1. Instrument an Application (20 min)

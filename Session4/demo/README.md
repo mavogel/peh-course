@@ -1,7 +1,10 @@
 # Session 4 Demo — Day 1 Verification
 
-## What You'll Show (5 min)
-Run all three test suites to prove the integrated platform works.
+## Demo Overview
+Run all three test suites to verify the integrated platform works end-to-end.
+
+## Dependencies — Run This First
+Requires a running Kind cluster with Crossplane and Gatekeeper from Sessions 2-3.
 
 ## Steps
 ```bash
@@ -15,7 +18,7 @@ python3 test-infrastructure.py
 python3 test-policies.py
 ```
 
-## Key Talking Points
+## Key Concepts
 - Three test suites validate the three pillars: runtime, infra, policy
 - In production, these run in CI as platform smoke tests
 - If any fail, you know exactly which layer has a problem

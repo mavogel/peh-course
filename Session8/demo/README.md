@@ -1,36 +1,41 @@
-# Session 8 Demo — AI-Augmented Platforms (Expanded: 35 min)
+# Session 8 Demo — AI-Augmented Platforms
 
-## What You'll Show (15 min demo)
-This is the capstone AI session. Show the full spectrum of AI platform capabilities.
+## Demo Overview
+The capstone AI session. Explore the full spectrum of AI platform capabilities —
+from document search to multi-agent incident response to governance.
+
+## Dependencies — Run This First
+```bash
+pip3 install scikit-learn pyyaml --break-system-packages
+# Optional (for LLM features): export ANTHROPIC_API_KEY=your-key-here
+```
 
 ## Steps
 ```bash
-# 1. Team topology visualization
-python3 team-topology-generator.py
-
-# 2. AI-POWERED: RAG document search (no API key)
+# 1. AI-POWERED: RAG document search (no API key)
 python3 rag-platform-docs.py
 # Try: "How do I create a new service?"
 # Try: "What are the RBAC policies?"
+# Try: "How do I set up monitoring?"
 
-# 3. AI-POWERED: Multi-agent incident response
+# 2. AI-POWERED: Multi-agent incident response
 python3 incident-agent.py
-# Shows: Triage Agent → Diagnosis Agent → Remediation Agent
+# Triage Agent → Diagnosis Agent → Remediation Agent
 # Each agent has a specific role, human-in-the-loop for critical actions
 
-# 4. AI-POWERED: Agent observability metrics
+# 3. AI-POWERED: Agent observability metrics
 python3 ai-agent-observability.py
-# Shows: How to monitor AI agents — latency, confidence, override rates
+# How to monitor AI agents — latency, confidence, override rates
 
-# 5. Show AI governance alerts
+# 4. Review AI governance alerts
 cat ai-governance-alerts.yaml
 # Prometheus alerts for: confidence drops, high override rates, latency spikes
 ```
 
-## Key Talking Points
-- Team Topologies: your platform mirrors your org structure (Conway's Law)
-- RAG: AI searches your platform docs — no more stale wikis
-- Multi-agent: specialized agents for triage, diagnosis, remediation
+## Key Concepts
+- RAG: AI searches your platform docs — no more stale wikis, no API key needed
+- Multi-agent: specialized agents for triage, diagnosis, remediation working together
 - Human-in-the-loop: AI suggests, humans approve critical actions
 - Observability for AI: you need to monitor AI agents just like you monitor services
 - Governance alerts: automated warnings when AI confidence drops or override rates spike
+- Start local (TF-IDF, heuristics), add LLMs (Claude) when the workflow is proven

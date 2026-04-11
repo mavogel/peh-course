@@ -15,9 +15,23 @@ Self-service infrastructure meets shift-left security. You'll set up Crossplane 
 - CI/CD pipeline architecture with GitHub Actions reusable workflows
 - Pre-commit hooks for shift-left validation
 
+## Knowledge Prerequisites
+
+- Everything from Sessions 1-2 (running cluster, namespaces, RBAC)
+- Understand what Helm is (Kubernetes package manager — installs things into your cluster)
+- Know what CI/CD pipelines are and why they matter
+- Basic understanding of policy enforcement (e.g., "don't allow containers to run as root")
+- Familiarity with GitHub Actions or any CI system (at a conceptual level)
+
 ## Tools Required
 
 - kubectl, Helm (for Crossplane), conftest, pre-commit, Python 3
+
+## Verify Your Setup
+
+```bash
+python3 verify_module.py
+```
 
 ## Contents
 
