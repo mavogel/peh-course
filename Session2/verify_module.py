@@ -30,7 +30,7 @@ def check_command(name, cmd, min_version=None):
     if path:
         try:
             version = subprocess.run(
-                [cmd, "version"] if cmd in ["kind", "helm", "pulumi"] else [cmd, "--version"],
+                [cmd, "version"] if cmd in ["kubectl", "kind", "helm", "pulumi"] else [cmd, "--version"],
                 capture_output=True, text=True, timeout=10
             )
             ver_str = (version.stdout + version.stderr).strip().split("\n")[0][:60]

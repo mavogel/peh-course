@@ -27,8 +27,9 @@ def check_command(name, cmd):
     path = shutil.which(cmd)
     if path:
         try:
+            version_flag = "version" if cmd in ("kubectl", "helm", "kind", "pulumi") else "--version"
             result = subprocess.run(
-                [cmd, "--version"], capture_output=True, text=True, timeout=10
+                [cmd, version_flag], capture_output=True, text=True, timeout=10
             )
             ver = (result.stdout + result.stderr).strip().split("\n")[0][:60]
             check(name, True, ver)
