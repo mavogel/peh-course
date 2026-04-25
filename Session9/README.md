@@ -205,16 +205,16 @@ How AI is reshaping platform engineering strategy, adoption, and operations.
 
 ### Books
 
-| Problem | Resource |
-|---|---|
-| Need the complete platform engineering reference (this course's companion) | *The Platform Engineer's Handbook* — Ajay Chankramath (Packt, 2026) |
-| Need a practical guide to building effective platform teams and practices | *Effective Platform Engineering* — Ajay Chankramath, Sean Alvarez, Bryan Oliver, Nic Cheneweth (Manning, 2025) — [effectiveplatformengineering.com](https://effectiveplatformengineering.com/) |
-| Need the foundational org design framework | *Team Topologies* — Matthew Skelton & Manuel Pais (IT Revolution, 2019) |
-| Need the research behind DORA metrics | *Accelerate* — Nicole Forsgren, Jez Humble, Gene Kim (IT Revolution, 2018) |
-| Need the DevOps transformation narrative | *The Phoenix Project* — Gene Kim, Kevin Behr, George Spafford (IT Revolution, 2013) |
-| Need the modern successor to The Phoenix Project | *The Unicorn Project* — Gene Kim (IT Revolution, 2019) |
-| Need to understand flow-based delivery | *Flow Engineering* — Steve Pereira & Andrew Davis (IT Revolution, 2024) |
-| Need Site Reliability Engineering foundations | *Site Reliability Engineering* — Betsy Beyer et al. (O'Reilly, 2016) — free at [sre.google/sre-book/table-of-contents](https://sre.google/sre-book/table-of-contents/) |
+| Problem | Resource | Link |
+|---|---|---|
+| Need the complete platform engineering reference (this course's companion) | *The Platform Engineer's Handbook* — Ajay Chankramath (Packt, 2026) | [Amazon](https://www.amazon.com/Platform-Engineers-Handbook-developer-focused-streamline/dp/1806380137) |
+| Need a practical guide to building effective platform teams and practices | *Effective Platform Engineering* — Ajay Chankramath, Sean Alvarez, Bryan Oliver, Nic Cheneweth (Manning, 2025) | [Amazon](https://www.amazon.com/Effective-Platform-Engineering-Ajay-Chankramath/dp/1633436497) \| [effectiveplatformengineering.com](https://effectiveplatformengineering.com/) |
+| Need the foundational org design framework | *Team Topologies* — Matthew Skelton & Manuel Pais (IT Revolution, 2019) | [Amazon](https://www.amazon.com/Team-Topologies-Organizing-Business-Technology/dp/1942788819) |
+| Need the research behind DORA metrics | *Accelerate* — Nicole Forsgren, Jez Humble, Gene Kim (IT Revolution, 2018) | [Amazon](https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339) |
+| Need the DevOps transformation narrative | *The Phoenix Project* — Gene Kim, Kevin Behr, George Spafford (IT Revolution, 2013) | [Amazon](https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/1942788290) |
+| Need the modern successor to The Phoenix Project | *The Unicorn Project* — Gene Kim (IT Revolution, 2019) | [Amazon](https://www.amazon.com/Unicorn-Project-Developers-Disruption-Thriving/dp/1942788762) |
+| Need to understand flow-based delivery | *Flow Engineering* — Steve Pereira & Andrew Davis (IT Revolution, 2024) | [Amazon](https://www.amazon.com/Value-Stream-Clarity-Steve-Pereira/dp/1950508455) |
+| Need Site Reliability Engineering foundations | *Site Reliability Engineering* — Betsy Beyer et al. (O'Reilly, 2016) | [Amazon](https://www.amazon.com/Site-Reliability-Engineering-Production-Systems/dp/149192912X) \| [Free online](https://sre.google/sre-book/table-of-contents/) |
 
 ---
 
