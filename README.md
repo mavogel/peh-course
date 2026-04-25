@@ -242,7 +242,24 @@ kubectl apply -f composition-postgresql.yaml
 conftest test conftest-tests/test-manifests.yaml -p conftest-tests/
 ```
 
-### Step 4: Backstage and Developer Experience (Session 5)
+### Step 4: Verify Everything Works (Session 4)
+
+```bash
+cd Session4/demo
+
+# Validate cluster health: nodes Ready, system pods running, team namespaces exist, quotas applied
+python3 test-cluster-health.py
+
+# Verify infrastructure: namespace isolation, RBAC roles and bindings, Crossplane readiness
+python3 test-infrastructure.py
+
+# Run policy checks: conftest catches missing labels, privileged containers, untrusted registries
+python3 test-policies.py
+```
+
+If all three pass, your Day 1 foundation is solid. If any fail, the output tells you exactly which Session 2 or 3 step was missed.
+
+### Step 5: Developer Experience and Self-Service (Session 5)
 
 ```bash
 cd Session5/demo
@@ -254,7 +271,7 @@ python3 project-bootstrapper.py bootstrap platform demo-api python
 python3 rag-platform-docs.py
 ```
 
-### Step 5: Observability Stack (Session 6)
+### Step 6: Observability Stack (Session 6)
 
 ```bash
 cd Session6/demo
@@ -266,7 +283,7 @@ kubectl apply -f otel-collector-deployment.yaml
 python3 alert-correlator.py
 ```
 
-### Step 6: Chaos and Resilience (Session 7)
+### Step 7: Chaos and Resilience (Session 7)
 
 ```bash
 cd Session7/demo
@@ -281,7 +298,7 @@ python3 chaos-runner.py
 python3 runbook-automator.py
 ```
 
-### Step 7: AI Platform Capabilities (Session 8)
+### Step 8: AI Platform Capabilities (Session 8)
 
 ```bash
 cd Session8/demo
@@ -296,7 +313,7 @@ python3 incident-agent.py
 python3 ai-agent-observability.py
 ```
 
-### Step 8: Team Topologies, Measure and Plan (Session 9)
+### Step 9: Team Topologies, Measure and Plan (Session 9)
 
 ```bash
 cd Session9/demo

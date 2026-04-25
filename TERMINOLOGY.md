@@ -8,9 +8,9 @@ This document serves as a comprehensive terminology reference for the 2-day work
 |------|-----------|-----------|
 | ACK (AWS Controllers for Kubernetes) | AWS service controllers that enable management of AWS resources directly from Kubernetes using custom resource definitions. | https://aws-controllers-k8s.github.io/community/ |
 | Admission Controller | Kubernetes components that intercept requests to the API server and can validate, mutate, or deny them based on policies. | https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/ |
-| AI Governance | Framework and policies for responsible, ethical, and compliant use of artificial intelligence systems in organizations. | [https://www.nist.gov/publications/artificial-intelligence-risk-management-framework](https://ai.wharton.upenn.edu/white-paper/artificial-intelligence-risk-governance/) |
+| AI Governance | Framework and policies for responsible, ethical, and compliant use of artificial intelligence systems in organizations. | https://www.nist.gov/publications/artificial-intelligence-risk-management-framework |
 | Alert Correlation | Technique for grouping and analyzing related alerts to reduce alert fatigue and identify root causes. | https://grafana.com/docs/grafana/latest/alerting/ |
-| Anomaly Detection | ML technique to identify unusual patterns or deviations in system behavior, metrics, or data. | https://www.ibm.com/think/topics/anomaly-detection |
+| Anomaly Detection | ML technique to identify unusual patterns or deviations in system behavior, metrics, or data. | https://scikit-learn.org/stable/modules/unsupervised.html |
 | OWASP | Open Worldwide Application Security Project providing standards, frameworks, and tools for building secure applications. | https://owasp.org/ |
 | ArgoCD | GitOps continuous delivery tool for Kubernetes that automatically syncs application state from Git repositories. | https://argoproj.github.io/cd/ |
 | Artificial Intelligence (AI) | Computer systems designed to perform tasks that typically require human intelligence, such as learning and problem-solving. | https://www.anthropic.com/ |
@@ -18,7 +18,7 @@ This document serves as a comprehensive terminology reference for the 2-day work
 | Atlantis | Tool for automating Terraform workflows in pull requests, enabling collaborative infrastructure changes. | https://www.runatlantis.io/ |
 | Backstage (Spotify) | Open-source developer portal platform providing a centralized hub for managing microservices, infrastructure, and documentation. | https://backstage.io/ |
 | Backup & Disaster Recovery | Processes and systems for protecting data and ensuring business continuity in case of failure or data loss. | https://velero.io/ |
-| Blast Radius | The scope or extent of potential impact from a failure, change, or deployment in a system. | [https://www.gremlin.com/chaos-engineering/blast-radius](https://www.linkedin.com/pulse/understanding-blast-radius-system-design-nitesh-kumar-sah-tpp3f/)/ |
+| Blast Radius | The scope or extent of potential impact from a failure, change, or deployment in a system. | https://www.gremlin.com/chaos-engineering/blast-radius/ |
 | Blue-Green Deployment | Deployment strategy where two identical production environments (blue and green) allow zero-downtime releases. | https://martinfowler.com/bliki/BlueGreenDeployment.html |
 | Bulkhead Pattern | Architectural pattern that isolates resources to prevent cascading failures across system components. | https://docs.microsoft.com/en-us/azure/architecture/patterns/bulkhead |
 | Canary Deployment | Deployment strategy that gradually rolls out changes to a subset of users to detect issues before full rollout. | https://semaphoreci.com/blog/canary-deployments |
@@ -31,7 +31,8 @@ This document serves as a comprehensive terminology reference for the 2-day work
 | Circuit Breaker | Design pattern that stops requests to a failing service temporarily to prevent cascading failures. | https://martinfowler.com/bliki/CircuitBreaker.html |
 | Claude (Anthropic) | Large language model created by Anthropic, used for natural language understanding and AI-powered applications. | https://www.anthropic.com/claude |
 | CNCF (Cloud Native Computing Foundation) | Vendor-neutral foundation hosting and promoting open-source cloud-native projects like Kubernetes and Prometheus. | https://www.cncf.io/ |
-| Cognitive Load | The amount of mental effort required to use a system; a key metric in measuring developer experience. | [https://www.linkedin.com/pulse/cognitive-load-developer-experience-jeanpierre-urquhart](https://github.com/zakirullin/cognitive-load) |
+| Cognitive Load | The amount of mental effort required to use a system; a key metric in measuring developer experience. | https://www.linkedin.com/pulse/cognitive-load-developer-experience-jeanpierre-urquhart |
+| Cognition as Code | Approach of encoding organizational knowledge and decision logic into automated systems and policies. | https://www.cortex.io/ |
 | Compliance as Code | Practice of encoding compliance requirements and policies as machine-readable code for automated enforcement. | https://www.viaduct.io/compliance-as-code |
 | Complicated-Subsystem Team | Team topology focused on managing complex technical subsystems requiring deep expertise. | https://teamtopologies.com/ |
 | Composition (Crossplane) | Crossplane feature that defines how composite resources are composed from primitive resources. | https://docs.crossplane.io/v1.13/concepts/compositions/ |
