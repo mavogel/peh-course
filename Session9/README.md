@@ -187,11 +187,28 @@ Stay connected after the course. These are the communities where practitioners s
 
 ---
 
+### AI & Platform Engineering — Thought Leadership
+
+How AI is reshaping platform engineering strategy, adoption, and operations.
+
+| Problem | Resource | Link |
+|---|---|---|
+| Need a comprehensive view of AI's role in platform engineering today | State of AI in Platform Engineering 2025 — Platformetrics & platformengineering.org whitepaper | [platformengineering.org/blog/state-of-ai-in-platform-engineering-2025](https://platformengineering.org/blog/state-of-ai-in-platform-engineering-2025) |
+| Want to understand how GenAI informs platform strategy | "How Generative AI Informs Platform Engineering Strategy" — Ajay Chankramath, The New Stack | [thenewstack.io/how-generative-ai-informs-platform-engineering-strategy](https://thenewstack.io/how-generative-ai-informs-platform-engineering-strategy/) |
+| Exploring whether platforms can accelerate AI adoption | "Can Platform Engineering Accelerate AI Adoption?" — Ajay Chankramath, The New Stack | [thenewstack.io/can-platform-engineering-accelerate-ai-adoption](https://thenewstack.io/can-platform-engineering-accelerate-ai-adoption/) |
+| Need to make the case for PE as a developer experience investment | "Why Platform Engineering Leads to a Better Developer Experience" — Ajay Chankramath, The New Stack | [thenewstack.io/platform-engineering-leads-to-a-better-developer-experience](https://thenewstack.io/platform-engineering-leads-to-a-better-developer-experience/) |
+| Want domain-driven approaches to next-gen platform engineering | "Domain Driven, AI-Augmented: Next Frontier in Platform Engineering" — Platformetrics | [platformengineering.org/blog/domain-driven-ai-augmented-the-next-frontier-in-platform-engineering](https://platformengineering.org/blog/domain-driven-ai-augmented-the-next-frontier-in-platform-engineering) |
+| Need to understand why domain thinking matters for platforms | "The Need for Domain Driven Platform Engineering" — Platformetrics | [platformengineering.org/blog/the-need-for-domain-driven-platform-engineering](https://platformengineering.org/blog/the-need-for-domain-driven-platform-engineering) |
+| Want a model for quantifying platform ROI | Platformetrics ROI Model — Platform investment analysis framework | [platformetrics.com/thought-leadership](https://platformetrics.com/thought-leadership.html) |
+
+---
+
 ### Books
 
 | Problem | Resource |
 |---|---|
 | Need the complete platform engineering reference (this course's companion) | *The Platform Engineer's Handbook* — Ajay Chankramath (Packt, 2026) |
+| Need a practical guide to building effective platform teams and practices | *Effective Platform Engineering* — Ajay Chankramath, Sean Alvarez, Bryan Oliver, Nic Cheneweth (Manning, 2025) — [effectiveplatformengineering.com](https://effectiveplatformengineering.com/) |
 | Need the foundational org design framework | *Team Topologies* — Matthew Skelton & Manuel Pais (IT Revolution, 2019) |
 | Need the research behind DORA metrics | *Accelerate* — Nicole Forsgren, Jez Humble, Gene Kim (IT Revolution, 2018) |
 | Need the DevOps transformation narrative | *The Phoenix Project* — Gene Kim, Kevin Behr, George Spafford (IT Revolution, 2013) |
